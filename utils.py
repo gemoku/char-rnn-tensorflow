@@ -1,7 +1,14 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+
 import os
 import collections
 import cPickle
 import numpy as np
+import sys
+reload(sys)
+sys.setdefaultencoding('utf8')
+
 
 class TextLoader():
     def __init__(self, data_dir, batch_size, seq_length):

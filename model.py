@@ -1,8 +1,14 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+
 import tensorflow as tf
 from tensorflow.models.rnn import rnn_cell
 from tensorflow.models.rnn import seq2seq
 
 import numpy as np
+import sys
+reload(sys)
+sys.setdefaultencoding('utf8')
 
 class Model():
     def __init__(self, args, infer=False):

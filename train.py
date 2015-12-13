@@ -1,3 +1,6 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+
 import numpy as np
 import tensorflow as tf
 
@@ -8,6 +11,10 @@ import cPickle
 
 from utils import TextLoader
 from model import Model
+
+import sys
+reload(sys)
+sys.setdefaultencoding('utf8')
 
 def main():
     parser = argparse.ArgumentParser()
